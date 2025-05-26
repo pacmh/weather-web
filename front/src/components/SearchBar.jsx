@@ -97,7 +97,7 @@ const SearchBar = ({ city, setCity, setWeatherData, setForecastData, setError })
         onKeyDown={handleKeyDown}
         style={{ padding: "10px", width: "70%" }}
       />
-      <button onClick={handleSearch} style={{ padding: "10px" }}>
+      <button onClick={() => handleSearch(city)} style={{ padding: "10px" }}>
         검색
       </button>
       {loading && <p>로딩 중...</p>}
